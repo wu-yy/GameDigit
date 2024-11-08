@@ -1,0 +1,177 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 50vw;
+  max-height: 25vw;
+  display: block;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-flow: row wrap;
+  max-width: 40vw;
+  margin: auto;
+  align-items: baseline;
+}
+
+button[type="submit"] {
+  padding: 5px 20px;
+  margin: 10px auto;
+  float: right;
+}
+
+#greeting {
+  margin: 10px auto;
+  padding: 10px 60px;
+  border: 1px solid #222;
+}
+
+#greeting:empty {
+  display: none;
+}
+
+/* App Container */
+.app-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header Styles */
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  font-size: 2em;
+  color: #333;
+  margin: 0;
+}
+
+/* Auth Button */
+.auth-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #45a049;
+}
+
+.auth-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Game Container */
+.game-container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-container h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #444;
+}
+
+/* Input Field */
+input[type="number"] {
+  padding: 8px;
+  font-size: 1em;
+  width: calc(100% - 22px);
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[type="number"]:disabled {
+  background-color: #f0f0f0;
+}
+
+/* Submit Button */
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Result Section */
+.result-section {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+.result-section p {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e0f7fa;
+  color: #00695c;
+}
+
+.result-section p.incorrect {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.result-section p.correct {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Loading State */
+.loading {
+  font-size: 1em;
+  color: #888;
+}
+
+/* Auth Prompt */
+.auth-prompt {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.auth-prompt p {
+  font-size: 1.1em;
+  color: #666;
+}
